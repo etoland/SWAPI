@@ -1,33 +1,42 @@
 import React from "react";
 import styled from "styled-components";
-import SWAP from "./SWAPI.png";
 import NavBar from "./NavBar";
+import People from "./People";
+import Star from "./Star.png";
+import Logo from "./Logo.png";
 
-const HomePage = () => {
+const HomePage = ({ people }) => {
   return (
     <div>
+      <Img src={Star} />
       <Div>
         <NavBar />
       </Div>
+      <Other src={Logo} />
       <OtherDiv>
-        <Img src={SWAP} />
+        <People />
       </OtherDiv>
     </div>
   );
 };
 
-const Div = styled.div`
-  display: flex;
-  justify-content: space-evenly;
+const Other = styled.img`
+  position: absolute;
+  right: 550px;
+  width: 30%;
+`;
+const Img = styled.img`
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 `;
 
-const OtherDiv = styled.div``;
+const Div = styled.div``;
 
-const Img = styled.img`
-  position: relative;
-  display: flex;
-  margin-left: 420px;
-  margin-top: 250px;
+const OtherDiv = styled.div`
+  margin-left: 130px;
+  margin-top: -150px;
 `;
 
 export default HomePage;
