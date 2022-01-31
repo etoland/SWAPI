@@ -41,11 +41,11 @@ app.get("/starships", async (req, res) => {
 });
 
 app.get("/people/:id/", async (req, res) => {
-  const { id } = req.params;
-  const api_url = `https://swapi.dev/api/people/${id}`;
+  const api_url = "https://swapi.dev/api/people";
   const fetch_response = await fetch(api_url);
   const json = await fetch_response.json();
-  res.json(json);
+  console.log(json);
+  res.status(200).json({ json });
 });
 
 app.listen(PORT, function () {
