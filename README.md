@@ -1,6 +1,8 @@
 # SWAPI
 SWAPI Project for FlightHub
 
+Before running use yarn on both and base root.
+
 How to run: Client
 1. cd my-app 
 2. yarn start
