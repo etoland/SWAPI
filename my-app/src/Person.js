@@ -15,7 +15,7 @@ const Person = () => {
   }, [id]);
   return (
     <>
-      <div>This is your person:{person} </div>
+      <div>Is this who you are searching for? {person} </div>
     </>
   );
 };
