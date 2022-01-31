@@ -1,7 +1,5 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import styled from "styled-components";
-import People from "./People.js";
 import Planets from "./Planets.js";
 import Starships from "./Starships";
 import HomePage from "./HomePage";
